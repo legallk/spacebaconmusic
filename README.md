@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### download iterm
 
 Download this application, so you can run the command necessary to start the project
-Link here >> [https://iterm2.com/]https://iterm2.com/
+Link here >> [https://iterm2.com/](https://iterm2.com/)
 
 ### clone the project. set up necessary tools. 
 
