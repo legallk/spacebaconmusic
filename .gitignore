@@ -1,0 +1,17 @@
+
+*.log
+.sass-lint.yml
+Homestead.json
+Homestead.yaml
+*.iml
+
+
+### OSX ###
+.AppleDouble
+.DS_Store
+.LSOverride
+
+
+package-lock.json
+yarn.lock
+.env-bak*
