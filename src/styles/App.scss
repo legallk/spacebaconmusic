@@ -84,23 +84,23 @@ hr {
     }
 
     &.first {
-        background-image: url(/background/cone-album-cover.jpeg);
+        background-image: url('/images/background/cone-album-cover.jpeg');
         height: 100vh;
     }
 
     &.second {
-        background-image: url(/background/milkboy.jpeg);
+        background-image: url('/images/background/milkboy.jpeg');
     }
 
     &.third {
-        background-image: url(/background/milkboy2.jpeg);
+        background-image: url('/images/background/milkboy2.jpeg');
     }
 
     &.fourth {
-        background-image: url(/background/milkboy3.jpeg);
+        background-image: url('/images/background/milkboy3.jpeg');
     }
     &.fifth {
-        background-image: url(/background/milkboy4.jpeg);
+        background-image: url('/images/background/milkboy4.jpeg');
     }
 }
 

@@ -1,6 +1,11 @@
 import './App.scss';
-import Socials from './components/Socials';
 import React from 'react';
+import Socials from './components/Socials';
+
+import chris from './images/band/chris.jpeg';
+import jack from './images/band/jack.jpeg';
+import kevin from './images/band/kevin.jpeg';
+import sam from './images/band/sam.jpeg';
 
 function App() {
   return (
@@ -33,19 +38,19 @@ function App() {
         <br /><br />
         <div className="images">
           <div className="img-wrap">
-            <img src="images/band/chris.jpeg" alt="chris" />
+            <img src={chris} alt="chris" />
             <h4>Chris Gironda - Keyboards</h4>
           </div>
           <div className="img-wrap">
-            <img src="images/band/jack.jpeg" alt="jack" />
+            <img src={jack} alt="jack" />
             <h4>Jack Willard - Guitar</h4>
           </div>
           <div className="img-wrap">
-            <img src="images/band/sam.jpeg" alt="sam" />
+            <img src={sam} alt="sam" />
             <h4>Sam Crespo - Drums</h4>
           </div>            
           <div className="img-wrap">
-            <img src="images/band/kevin.jpeg" alt="kevin" />
+            <img src={kevin} alt="kevin" />
             <h4>Kevin LeGall - Bass</h4>
           </div>            
         </div>
