@@ -2,10 +2,10 @@ import './App.scss';
 import React from 'react';
 import Socials from './components/Socials';
 
-import chris from './images/band/chris.jpeg';
-import jack from './images/band/jack.jpeg';
-import kevin from './images/band/kevin.jpeg';
-import sam from './images/band/sam.jpeg';
+import chris from './images/band/chris.jpg';
+import jack from './images/band/jack.jpg';
+import kevin from './images/band/kevin.jpg';
+import sam from './images/band/sam.jpg';
 
 function App() {
   return (
