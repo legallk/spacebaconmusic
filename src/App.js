@@ -1,4 +1,3 @@
-import logo from './images/cone-album-cover.jpeg';
 import './App.scss';
 
 function App() {
@@ -6,7 +5,7 @@ function App() {
     <div className="App">
       <header className="App-header" id="home">
       <nav className="sticky-top">
-        <img src="header-logo.png" alt="space-bacon-header-logo" />
+        <img src="images/header-logo.png" alt="space-bacon-header-logo" />
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -32,22 +31,24 @@ function App() {
         <br /><br />
         <div class="images">
           <div class="img-wrap">
-            <img src="/band/chris.jpeg" alt="chris" />
+            <img src="images/band/chris.jpeg" alt="chris" />
             <h4>Chris Gironda - Keyboards</h4>
           </div>
           <div class="img-wrap">
-            <img src="/band/jack.jpeg" alt="jack" />
+            <img src="images/band/jack.jpeg" alt="jack" />
             <h4>Jack Willard - Guitar</h4>
           </div>
           <div class="img-wrap">
-            <img src="/band/sam.jpeg" alt="sam" />
+            <img src="images/band/sam.jpeg" alt="sam" />
             <h4>Sam Crespo - Drums</h4>
           </div>            
           <div class="img-wrap">
-            <img src="/band/kevin.jpeg" alt="kevin" />
+            <img src="images/band/kevin.jpeg" alt="kevin" />
             <h4>Kevin LeGall - Bass</h4>
           </div>            
         </div>
+        <hr />
+        <Socials />
       </div>
       <div class="parallax second"></div>
       <div class="container" id="tour">
@@ -72,7 +73,7 @@ function App() {
             <p>Additionally, CONE features reimagined versions of time-tested songs from the road. In the studio, the band was able to further explore seemingly divergent influences of dance, prog, down-tempo grooves, and more as the pieces of CONE came together on the album mastered by Anthony Thogmartin (Papadosio)." - LiveForLiveMusic</p>
           </div>
           <div>
-            <iframe style={{border: 0, width: '350px', height: '470px'}}
+            <iframe style={{border: 0, width: '350px', height: '470px'}} title="bandcamp"
               src="https://bandcamp.com/EmbeddedPlayer/album=2758300430/size=large/bgcol=ffffff/linkcol=7137dc/tracklist=false/transparent=true/" seamless="">
                 <a href="https://spacebacon.bandcamp.com/album/cone">Cone by Space Bacon</a>
               </iframe>
@@ -95,39 +96,7 @@ function App() {
         <p>SpaceBaconMGMT@gmail.com</p>       
       </div>
       <footer>
-        <ul>
-          <li>
-            <a href="https://www.facebook.com/spacebaconmusic">
-              <img src="/svg/vintage/facebook.svg" alt="facebook" />
-            </a>
-          </li>
-          <li>
-            <a href="https://instagram.com/spacebacon">
-              <img src="/svg/vintage/instagram.svg" alt="instagram" />
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/spacebaconmusic">
-              <img src="/svg/vintage/twitter.svg" alt="twitter" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/c/SpaceBaconOfficial/videos">
-              <img src="/svg/vintage/youtube.svg" alt="youtube" />
-            </a>
-          </li>
-
-          <li>
-            <a href="https://soundcloud.com/spacebacon">
-              <img src="/svg/vintage/soundcloud.svg" alt="soundcloud" />
-            </a>
-          </li>
-          <li>
-            <a href="https://spacebacon.bandcamp.com/">
-              <img src="/svg/vintage/bandcamp.svg" alt="bandcamp" />
-            </a>
-          </li>
-        </ul>
+        <Socials />
         <div class="legal">
         © Space Bacon, LLC | Website Designed & Developed by <a href="mailto: Kev1nL3Gall@gmail.com">Kevin LeGall</a>
         <hr />

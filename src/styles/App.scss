@@ -1,7 +1,7 @@
 html, body {
     background: #000000;
     color: #ffffff;
-	font-family: Averta;
+	font-family: Oswald, 'Open Sans';
     height: 100%;
 	margin: 0;
     scroll-behavior: smooth;
@@ -17,7 +17,16 @@ h2 {
     margin-bottom: 22px;
 }
 
+h3 {
+    font-weight: 400;
+}
+
+h4 {
+    font-weight: 500;
+}
+
 p {
+    font-weight: 300;
     line-height: 1.8;
     margin: 22px auto;
     width: 80%;
@@ -78,6 +87,31 @@ hr {
     }
     &.fifth {
         background-image: url(../images/milkboy4.jpeg);
+    }
+}
+
+.socials {
+    padding: 15px 0;
+
+    ul {
+        li {
+            display: inline-block;
+            padding: 0 7.5px;
+            img {
+                color: #ffffff;
+                height: auto;
+                width: 50px;
+
+                &:hover {
+                    opacity: .5;
+                }
+
+                &:last-child {
+                    border-radius: 50%;
+                    padding: 5px;
+                }
+            }
+        }
     }
 }
 
@@ -156,36 +190,13 @@ header {
 }
 
 footer {
-    height: 65px;
-
-    ul {
-        li {
-            display: inline-block;
-            padding: 0 7.5px;
-            img {
-                color: #ffffff;
-                height: auto;
-                width: 50px;
-
-                &:hover {
-                    opacity: .5;
-                }
-
-                &:last-child {
-                    border-radius: 50%;
-                    padding: 5px;
-                }
-            }
-        }
-    }
 
     .legal {
-        padding: 22px 0;
-        background: #c3c3c3;
-        padding: 7px;
+        padding: 15px 0;
+        background: #333;
 
         a {
-            color: #333333;
+            color: #cccccc;
             text-decoration: none;
         }
     }
@@ -289,4 +300,22 @@ footer {
 }
 .bit-play-my-city-button, .bit-logo-desktop, .bit-top-track-button {
     display: none !important;
+}
+
+.bit-rsvp-container, .bit-single-cta {
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    &:hover {
+        opacity: .5;
+    }
+}
+
+.bit-offers.bit-button {
+    color: #000000 !important;
+    background: #ffffff !important;
+}
+
+.bit-widget .bit-venue {
+    text-align: left !important;
 }
