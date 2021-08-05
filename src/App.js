@@ -29,12 +29,14 @@ function App() {
       <div className="parallax first">
         <div className="text">
           <h1>Space Bacon</h1>
+          <h4>Est. 2013</h4>
         </div>
       </div>
       <div className="container" id="about">
         <h2>About Us</h2>
         <p>The origin of Space Bacon traces back to the depths of Fordham University basement parties on the gritty streets of the Bronx. Since then, Space Bacon has grown from frat fests to the main stage, quickly conquering the title as one of the brightest up-and-coming jam bands in the region.</p>
         <p>Space Bacon has performed at The Capitol Theater, Irving Plaza, Brooklyn Bowl, TLA, Bowery Ballroom, as well as toured all around the country, performing with artists such as Umphrey’s McGee, Tauk, Spafford, Pigeons Playing Ping Pong, Papadosio, Breaking Biscuits, Consider the Source, and many more!</p>
+        <p>All of the band’s live shows are documented and soundboards are released through their Bandcamp and Soundcloud pages, as well as a series of select studio and live releases on Spotify, Apple Music, or your favorite streaming service of choice!</p>
         <br /><br />
         <div className="images">
           <div className="img-wrap">
@@ -76,8 +78,8 @@ function App() {
           <div>
             <h2>Cone by Space Bacon</h2>
             <h3>The Debut Full Length Studio Album</h3>
-            <p>"Rather than just a collection of songs the band has amassed over years of persistent touring, CONE is a sonic journey. Between fan favorites like “Ice Planet”, “Cloud Coast”, and “Heatseeker”, the Brooklyn quartet has composed unique interludes that stitch the album together as a cohesive work.</p>
-            <p>Additionally, CONE features reimagined versions of time-tested songs from the road. In the studio, the band was able to further explore seemingly divergent influences of dance, prog, down-tempo grooves, and more as the pieces of CONE came together on the album mastered by Anthony Thogmartin (Papadosio)." - LiveForLiveMusic</p>
+            <p>"Rather than just a collection of songs the band has amassed over years of persistent touring, CONE is a sonic journey. Between fan favorites like <a href="https://spacebacon.bandcamp.com/track/ice-planet-32">“Ice Planet”</a>, <a href="https://spacebacon.bandcamp.com/track/cloud-coast-15">“Cloud Coast”</a>, and <a href="https://spacebacon.bandcamp.com/track/heatseeker-14">“Heatseeker”</a>, the Brooklyn quartet has composed unique interludes that stitch the album together as a cohesive work.</p>
+            <p>Additionally, CONE features reimagined versions of time-tested songs from the road. In the studio, the band was able to further explore seemingly divergent influences of dance, prog, down-tempo grooves, and more as the pieces of CONE came together on the album mastered by Anthony Thogmartin (Papadosio)." - <a href="https://liveforlivemusic.com/news/space-bacon-cone-album-release-stream/">LiveForLiveMusic</a></p>
           </div>
           <div>
             <iframe style={{border: 0, width: '350px', height: '470px'}} title="bandcamp"
