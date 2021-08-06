@@ -1,3 +1,8 @@
+/******************
+//  Mobile
+******************/
+
+// Global   //
 html, body {
     background: #000000;
     color: #ffffff;
@@ -7,6 +12,11 @@ html, body {
     scroll-behavior: smooth;
     text-align: center;
     overflow-x: hidden;
+}
+
+body {
+    perspective: 1px;
+    transform-style: preserve-3d;
 }
 
 ul, li {
@@ -37,7 +47,6 @@ p {
 
 a {
     color: #cccccc;
-    font-size: 22px;
     font-weight: 500;
     line-height: 2;
     text-decoration: none;
@@ -53,107 +62,13 @@ img {
     transition: opacity .25s ease-in-out;
     -moz-transition: opacity .25s ease-in-out;
     -webkit-transition: opacity .25s ease-in-out;
+
     &:hover {
         cursor: pointer;
     }
 }
 hr {
     width: 120px;
-}
-
-.parallax {
-    background-attachment: initial;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
-    position: relative;
-    opacity: 0.9;
-
-    .text {
-        color: #ffffff;
-        font-size: 36px;
-        margin: 0;
-        position: absolute;
-        text-align: center;
-        top: calc(50% - 150px);
-        width: 100%;
-
-        h1, h4 {
-            margin: 0;
-            text-shadow: 3px 3px 2px #000000;
-        }
-
-        h4 {
-            font-size: 20px;
-            text-shadow: 1px 1px 1px #000000;
-        }
-    }
-
-    &.first {
-        background-image: url('/images/background/cone-album-cover.jpg');
-    }
-
-    &.second {
-        background-image: url('/images/background/milkboy.jpg');
-    }
-
-    &.third {
-        background-image: url('/images/background/milkboy2.jpg');
-    }
-
-    &.fourth {
-        background-image: url('/images/background/milkboy3.jpg');
-    }
-    &.fifth {
-        background-image: url('/images/background/milkboy4.jpg');
-    }
-}
-
-.socials {
-    padding: 15px 0;
-
-    ul {
-        li {
-            display: inline-block;
-            padding: 0 7.5px;
-            img {
-                color: #ffffff;
-                height: auto;
-                width: 50px;
-
-                &:hover {
-                    opacity: .5;
-                }
-
-                &:last-child {
-                    border-radius: 50%;
-                    padding: 5px;
-                }
-            }
-        }
-    }
-}
-
-.images {
-    .img-wrap {
-        display: inline-block;
-        padding: 15px;
-    
-        img {
-            height: auto;       
-            width: 230px;
-            position: relative;
-    
-            &:hover {
-                -webkit-filter: grayscale(100%);
-                -moz-filter: grayscale(100%);
-                filter: grayscale(100%);
-                transition: all 0.6s ease-in-out;
-    
-            }
-        }
-    }
 }
 
 header {
@@ -169,7 +84,7 @@ header {
         z-index: 1020;
 
         img {
-            height: auto;
+            height: 64px;
             width: 150px;
         }
 
@@ -196,7 +111,125 @@ header {
     }
 }
 
+footer {
+
+    .legal {
+        padding: 15px;
+        background: #333;        
+    }
+
+    a {
+        font-size: 16px;
+    }
+}
+
+// Custom   //
+.parallax {
+    background-attachment: initial;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    position: relative;
+    opacity: 0.9;
+
+    .text {
+        color: #ffffff;
+        font-size: 36px;
+        margin: 0;
+        position: absolute;
+        text-align: center;
+        top: calc(50% - 150px);
+        width: 100%;
+
+        h1, h4 {
+            margin: 0;
+            text-shadow: 3px 3px 2px #000000;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        h4 {
+            font-size: 20px;
+            text-shadow: 1px 1px 1px #000000;
+        }
+    }
+
+    &.first {
+        background-image: url('/images/background/cone-album-cover.jpg');
+        height: 73vh;
+    }
+
+    &.second {
+        background-image: url('/images/background/milkboy.jpg');
+    }
+
+    &.third {
+        background-image: url('/images/background/milkboy2.jpg');
+    }
+
+    &.fourth {
+        background-image: url('/images/background/milkboy3.jpg');
+    }
+    &.fifth {
+        background-image: url('/images/background/milkboy4.jpg');
+    }
+}
+
+.socials {
+
+    ul {
+        li {
+            display: inline-block;
+            padding: 0 7.5px;
+
+            img {
+                color: #ffffff;
+                height: auto;
+                filter: sepia(40%);
+                width: 50px;
+
+                &:hover {
+                    opacity: .5;
+                }
+
+                &:last-child {
+                    border-radius: 50%;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+
+.images {
+    .img-wrap {
+        display: inline-block;
+    
+        img {
+            height: auto;       
+            width: 150px;
+            position: relative;
+    
+            &:hover {
+                -webkit-filter: grayscale(100%);
+                -moz-filter: grayscale(100%);
+                filter: grayscale(100%);
+                transition: all 0.6s ease-in-out;
+    
+            }
+        }
+
+        h4 {
+            font-size: 14px;
+        }
+    }
+}
+
 .container {
+    display: inline-block;
     margin: 0 auto;
     padding: 15px;
 
@@ -211,42 +244,46 @@ header {
     }
 }
 
-footer {
-
-    .legal {
-        padding: 15px;
-        background: #333;        
-    }
-
-    a {
-        font-size: 16px;
-    }
-}
-
+// Unique   //
 .no-mobile {
     display: none;
 }
+.mobile-only{
+    display: block;
+}
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-    .parallax {
-        background-attachment: fixed;
-        
-        .text {
-            font-size: 46px;
-        }
+#about {
+    &.container {
+        p {
+            display: none;
 
-        &.first {
-            height: 100vh;
+            &:first-of-type {
+                display: block;
+            }
         }
     }
-    
+}
+
+#album {
+    h2, h3 {
+        margin: 5px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+/******************
+//  Tablet
+******************/
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    // Global   //
     header {
         nav {
             ul {
                 margin: 0;
 
                 li {
-                    padding: 10px 15px;
+                    padding: 10px;
                     font-size: 20px;
 
                     a {
@@ -257,8 +294,45 @@ footer {
         }
     }
 
+    // Custom   //
+    .parallax {
+        background-attachment: fixed;
+        height: 50vh;
+        
+        .text {    
+            h1 {
+                font-size: 100px;
+            }
+        }
+
+        &.first {
+            height: 100vh;
+        }
+    }
+
+    .images {
+        margin: 0 auto;
+        width: 550px;
+
+        .img-wrap {
+            padding: 15px;
+
+            img{
+                width: 230px;
+            }
+
+            h4 {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .socials {
+        padding: 15px 0;
+    }
+    
     .container {
-        padding: 90px 60px;
+        padding: 30px 60px;
 
         &.album {
             height: 500px;
@@ -269,8 +343,10 @@ footer {
             padding: 0;
             
             div {
+                background-color: #000000;
                 float: right;
-                width: 40%;
+                width: 46%;
+                z-index: 100;
 
                 + div {
                     float: left;
@@ -278,32 +354,35 @@ footer {
             }
         }
     }
-
+    
+    // Unique   //
     .no-mobile {
         display: block;
     }
+    .mobile-only {
+        display: none;
+    }
 
-    .images {
-        margin: 0 auto;
-        width: 550px;
+    #album {
+        p {
+            font-size: 16px;
+            width: auto;
+        }
     }
 }
 
-
+/******************
+//  Desktop
+******************/
 @media (min-width: 1200px) {
-
-    .parallax {
-        background-attachment: fixed;
-
-        .text {
-            font-size: 56px;
-        }
-
-        &.first {
-            height: 100vh;
-        }
+    // Global   //
+    h2 {
+        font-size: 44px;
     }
-
+    p {
+        font-size: 20px;
+        width: 60%;
+    }
     header {
         nav {
             background-color: transparent;
@@ -329,32 +408,101 @@ footer {
             }
         }
     }
+    // Custom   //
+    .parallax {
+        background-attachment: fixed;
+        height: 75vh;
+
+        .text {
+            
+            h1 {
+                font-size: 120px;
+            }
+        }
+
+        &.first {
+            height: 100vh;
+        }
+    }
+
+    .images {
+        .img-wrap {
+            padding: 15px;
+
+            img {
+                width: 250px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+        }
+    }
+
+    .socials {
+        padding: 15px 0;
+    }
 
     .container {
-        padding: 90px 120px;
+        padding: 30px 120px;
 
         .row {
             margin: 0
         }
     }
-
+    // Unique   //
     .no-mobile {
         display: block;
+    }
+    .mobile-only {
+        display: none;
     }
 
     #about {
         &.container {
-            padding: 90px 15px;
+            padding: 30px 15px;
+        }
+    }
+
+    #album {
+        p {
+            font-size: 18px;
+        }
+    }
+
+    #about, #album {
+        //height: 100vh;
+    }
+
+    #contact {
+        .row {
+            margin: 0 -15px;
+            padding: 0;
+            
+            div {
+                background-color: #000000;
+                float: right;
+                width: 46%;
+                z-index: 100;
+
+                + div {
+                    float: left;
+                }
+            }
         }
     }
 }
 
-// Override
+// Override Bandcamp //
 .bit-logo-mobile {
     display: block !important;
 }
 .bit-play-my-city-button, .bit-logo-desktop, .bit-top-track-button {
     display: none !important;
+}
+
+.bit-widget .bit-upcoming-events, .bit-past-events {
+    border: none;
 }
 
 .bit-rsvp-container, .bit-single-cta {

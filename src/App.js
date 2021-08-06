@@ -26,7 +26,7 @@ function App() {
         </ul>
       </nav>
       </header>
-      <div className="parallax first">
+      <div className="parallax first" id="first">
         <div className="text">
           <h1>Space Bacon</h1>
           <h4>Est. 2013</h4>
@@ -40,21 +40,21 @@ function App() {
         <br /><br />
         <div className="images">
           <div className="img-wrap">
-            <img src={chris} alt="chris" />
-            <h4>Chris Gironda - Keyboards</h4>
-          </div>
-          <div className="img-wrap">
             <img src={jack} alt="jack" />
             <h4>Jack Willard - Guitar</h4>
           </div>
           <div className="img-wrap">
-            <img src={sam} alt="sam" />
-            <h4>Sam Crespo - Drums</h4>
-          </div>            
+            <img src={chris} alt="chris" />
+            <h4>Chris Gironda - Keyboards</h4>
+          </div>
           <div className="img-wrap">
             <img src={kevin} alt="kevin" />
             <h4>Kevin LeGall - Bass</h4>
-          </div>            
+          </div>
+          <div className="img-wrap">
+            <img src={sam} alt="sam" />
+            <h4>Sam Crespo - Drums</h4>
+          </div>
         </div>
         <hr />
         <Socials />
@@ -76,7 +76,7 @@ function App() {
       <div className="container album" id="album">
         <div className="row">
           <div>
-            <h2>Cone by Space Bacon</h2>
+            <h2>Cone</h2>
             <h3>The Debut Full Length Studio Album</h3>
             <p>"Rather than just a collection of songs the band has amassed over years of persistent touring, CONE is a sonic journey. Between fan favorites like <a href="https://spacebacon.bandcamp.com/track/ice-planet-32">“Ice Planet”</a>, <a href="https://spacebacon.bandcamp.com/track/cloud-coast-15">“Cloud Coast”</a>, and <a href="https://spacebacon.bandcamp.com/track/heatseeker-14">“Heatseeker”</a>, the Brooklyn quartet has composed unique interludes that stitch the album together as a cohesive work.</p>
             <p>Additionally, CONE features reimagined versions of time-tested songs from the road. In the studio, the band was able to further explore seemingly divergent influences of dance, prog, down-tempo grooves, and more as the pieces of CONE came together on the album mastered by Anthony Thogmartin (Papadosio)." - <a href="https://liveforlivemusic.com/news/space-bacon-cone-album-release-stream/">LiveForLiveMusic</a></p>
@@ -90,21 +90,29 @@ function App() {
         </div>
       </div>
       <div className="parallax fourth"></div>
-      <div className="container no-mobile">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/0KbIdC6dKA0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+      <div className="container no-mobile" id="video">
+        <iframe width="720" height="470" src="https://www.youtube.com/embed/0KbIdC6dKA0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
       <div className="parallax fifth no-mobile"></div>
       <div className="container" id="contact">
         <h2>Contact Us</h2>
-        <h3>For Booking Please Contact:</h3>
-        <p>Pivotal Agency // Sam Hutchinson - Booking Agent</p>
-        <a href="mailto:SpaceBaconBooking@gmail.com">SpaceBaconBooking@gmail.com</a>
-        <br/><br/>
-        <hr />
-        <br/>
-        <h3>For Press Inquiries and General Contact:</h3>
-        <p>Harrison Waxenberg - Manager</p>
-        <a href="mailto:SpaceBaconMGMT@gmail.com">SpaceBaconMGMT@gmail.com</a>     
+        <div className="row">
+          <div>
+            <h3>For Booking Please Contact:</h3>
+            <p>Pivotal Agency // Sam Hutchinson - Booking Agent</p>
+            <a href="mailto:SpaceBaconBooking@gmail.com">SpaceBaconBooking@gmail.com</a>
+          </div>
+          <div className="mobile-only">
+            <br/><br/>
+            <hr />
+            <br/>
+          </div>
+          <div>
+            <h3>For Press Inquiries and General Contact:</h3>
+            <p>Harrison Waxenberg - Manager</p>
+            <a href="mailto:SpaceBaconMGMT@gmail.com">SpaceBaconMGMT@gmail.com</a>     
+          </div>
+        </div>
       </div>
       <footer>
         <Socials />
