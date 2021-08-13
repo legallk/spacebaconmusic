@@ -7,6 +7,8 @@ import jack from './images/band/jack.jpg';
 import kevin from './images/band/kevin.jpg';
 import sam from './images/band/sam.jpg';
 
+import pivotal from './images/pivotal.png';
+
 function App() {
   return (
     <div className="App">
@@ -96,6 +98,9 @@ function App() {
       <div className="parallax fifth no-mobile"></div>
       <div className="container" id="contact">
         <h2>Contact Us</h2>
+        <a href="https://pivotal-agency.com/artist/space-bacon/">
+          <img src={pivotal} alt='pivotal' />
+        </a>
         <div className="row">
           <div>
             <h3>For Booking Please Contact:</h3>

@@ -272,6 +272,23 @@ footer {
         font-size: 14px;
     }
 }
+
+#contact {
+
+    a {
+        img {
+            width: 150px;
+            height: auto;
+
+        }
+
+        &:hover {
+            img {
+                opacity: .5;
+            }
+        }
+    }
+}
 /******************
 //  Tablet
 ******************/
