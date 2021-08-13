@@ -84,7 +84,7 @@ function App() {
             <p>Additionally, CONE features reimagined versions of time-tested songs from the road. In the studio, the band was able to further explore seemingly divergent influences of dance, prog, down-tempo grooves, and more as the pieces of CONE came together on the album mastered by Anthony Thogmartin (Papadosio)." - <a href="https://liveforlivemusic.com/news/space-bacon-cone-album-release-stream/">LiveForLiveMusic</a></p>
           </div>
           <div>
-            <iframe style={{border: 0, width: '350px', height: '470px'}} title="bandcamp"
+            <iframe style={{border: 0, width: '330px', height: '470px'}} title="bandcamp"
               src="https://bandcamp.com/EmbeddedPlayer/album=2758300430/size=large/bgcol=ffffff/linkcol=7137dc/tracklist=false/transparent=true/" seamless="">
                 <a href="https://spacebacon.bandcamp.com/album/cone">Cone by Space Bacon</a>
               </iframe>
